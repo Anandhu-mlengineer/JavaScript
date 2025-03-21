@@ -9,9 +9,9 @@ const rl = readline.createInterface({
 });
 
 function guess() {
-    try {
-        rl.question("Enter a number between 1 and 10: ", function (n) {
-            n = Number(n);
+    
+        rl.question("Enter a number between 1 and 10:", function(n) {
+           let  n = Number(n);
             
             if (isNaN(n)) {
                 console.log("Invalid input. Please enter a number.");
@@ -19,17 +19,16 @@ function guess() {
             }
 
             if (n === randomNumber) {
-                console.log("You guessed it right!");
+                console.log("You guessed it right");
                 rl.close(); 
             } else {
-                console.log(" Sorry, please try again.");
+                console.log(" Sorry please try again");
                 guess(); 
             }
         });
-    } catch (error) {
-        console.error(" Error occurred:", error.message);
-        rl.close();
-    }
-}
+    } 
+            rl.close();
+    
 
-guess(); 
+
+guess(n); 
