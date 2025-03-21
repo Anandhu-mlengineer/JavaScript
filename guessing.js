@@ -11,7 +11,7 @@ const rl = readline.createInterface({
 function guess() {
     
         rl.question("Enter a number between 1 and 10:", function(n) {
-           let  n = Number(n);
+           n = Number(n);
             
             if (isNaN(n)) {
                 console.log("Invalid input. Please enter a number.");

@@ -1,7 +1,7 @@
 let num = 5;
-if (num>0){
+if (num > 0){
     console.log("The number is possitive");
-}else if(num<0) {
+}else if(num < 0) {
     console.log("The number is negative");
 
 
@@ -16,10 +16,10 @@ const rl = readline.createInterface({
 });
 rl.question("Enter a number: ",function(num){
     num = Number(num);
-    if (num>0) {
+    if (num > 0) {
         console.log("The number is possitive");
 
-    }else if(num<0) {
+    }else if(num < 0) {
         console.log("The number is negative");
 
     }else {
@@ -38,22 +38,22 @@ rl = readline.createInterface({
 rl.question("Enter a number: ", function(day){
     day = Number(day);
     switch(day){
-        case day ===1:
+        case day === 1:
             console.log("Today is monday");
-        case day===2:
+        case day === 2:
             console.log("Today is tuesday");
-        case day===3:
+        case day === 3:
             console.log("Today is wednsday");
-        case day===4:
+        case day === 4:
             console.log("Today is thrusday");
-        case day===5:
+        case day === 5:
             console.log("Today is friday");
-        case day===6:
+        case day === 6:
             console.log("today is saturday");
-        case day===7:
+        case day === 7:
             console.log("Today is sunday");
 
-        case day>7:
+        case day > 7:
             console.log("Invalid for day");
     }
 })

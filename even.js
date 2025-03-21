@@ -5,8 +5,8 @@ rl = readline.createInterface({
 });
 rl.question("Enter a number: ",function even(num){
     num = Number(num);
-    for (let i = 1; i<=num; i++){
-        if (i%2==0){
+    for (let i = 1; i <= num; i++){
+        if (i%2 === 0){
             console.log(i);
         }
     }
